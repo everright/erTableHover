@@ -1,0 +1,468 @@
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+    table {
+        border-collapse: separate;
+        width: 80%;
+        border: 1px solid #333;
+    }
+    th, td {
+        padding: 5px;
+        border: 1px solid #333;
+    }
+    .er_table_hover {
+        background-color: #ffcc66;
+    }
+    .er_table_clicked {
+        background-color: #666;
+    }
+    .er_table_cur_clicked {
+        background-color: #dedede;
+        
+    }
+    .er_table_cur {
+        background-color: #444;
+    }
+</style>
+</head>
+<body>
+    <h1>er Table Hover plugin demo</h1>
+    <h2>Demo 1</h2>
+    <p>Options: default</p>
+    <table id="demo1">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Website</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <th>No.</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Website</th>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>Demo 2</h2>
+    <p>Options: {'hoverHandle':'col'}</p>
+    <table id="demo2">
+        <thead>
+            <th>No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Website</th>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tfoot>
+            <th>No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Website</th>
+        </tfoot>
+    </table>
+    <h2>Demo 3</h2>
+    <p>Options: {'hoverHandle':'row'}</p>
+    <table id="demo3">
+        <thead>
+            <th>No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Website</th>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tfoot>
+            <th>No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Website</th>
+        </tfoot>
+    </table>
+    <h2>Demo 4</h2>
+    <p>Options: {'ingoreCols':':eq(0)'}</p>
+    <table id="demo4">
+        <thead>
+            <th>No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Website</th>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tfoot>
+            <th>No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Website</th>
+        </tfoot>
+    </table>
+    <h2>Demo 5</h2>
+    <p>Options: {'ingoreCols':':first, :eq(1)'}</p>
+    <table id="demo5">
+        <thead>
+            <th>No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Website</th>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tfoot>
+            <th>No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Website</th>
+        </tfoot>
+    </table>
+    <h2>Demo 6</h2>
+    <p>Options: {'ingoreCols':':first, :last'}</p>
+    <table id="demo6">
+        <thead>
+            <th>No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Website</th>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tfoot>
+            <th>No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Website</th>
+        </tfoot>
+    </table>
+    <h2>Demo 7</h2>
+    <p>Options: {'ingoreRows':':first'}</p>
+    <table id="demo7">
+        <tr>
+            <th>No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Website</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+    </table>
+    <h2>Demo 8</h2>
+    <p>Options: {'ingoreRows':':first, :last'}</p>
+    <table id="demo8">
+        <tr>
+            <th>No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Website</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Everright</td>
+            <td>Chen</td>
+            <td>everright.chen@gmail.com</td>
+            <td>http://www.everright.cn</td>
+        </tr>
+        <tr>
+            <th>No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Website</th>
+        </tr>
+    </table>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js'></script>
+<script type='text/javascript' src='lib/jquery.erTableHover.min.js'></script>
+<script type='text/javascript'>
+$(document).ready(function() {
+    $('#demo1').erTableHover();
+    $('#demo2').erTableHover({'hoverHandle':'col'});
+    $('#demo3').erTableHover({'hoverHandle':'row'});
+    $('#demo4').erTableHover({'ingoreCols':':eq(0)'});
+    $('#demo5').erTableHover({'ingoreCols':':first, :eq(1)'});
+    $('#demo6').erTableHover({'ingoreCols':':first, :last'});
+    $('#demo7').erTableHover({'ingoreRows':':first'});
+    $('#demo8').erTableHover({'ingoreRows':':first, :last'});
+});
+</script>
+</body>
+</html>
